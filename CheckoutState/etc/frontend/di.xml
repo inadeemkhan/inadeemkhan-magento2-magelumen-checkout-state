@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Directory\Model\ResourceModel\Region\Collection">
+		<plugin 
+            name="Magelumen_CheckoutState_Plugin_Frontend_Magento_Directory_Model_ResourceModel_Region_Collection" 
+            type="Magelumen\CheckoutState\Plugin\Frontend\Magento\Directory\Model\ResourceModel\Region\Collection" 
+            sortOrder="10" 
+            disabled="false" />
+	</type>
+</config>

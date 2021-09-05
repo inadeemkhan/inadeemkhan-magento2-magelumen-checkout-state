@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="checkout" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>checkout</label>
+			<tab>sales</tab>
+			<resource>Magento_Checkout::checkout</resource>
+			<group id="state_filter" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>Allowed US States in Checkout</label>
+				<field id="us_state_filter" type="multiselect" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>Allowed US States in Checkout</label>
+					<comment/>
+					<source_model>Magelumen\CheckoutState\Model\Config\Source\UsStateFilter</source_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
